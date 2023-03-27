@@ -33,7 +33,7 @@ async def inference(request: Request):
 
     if endpoint == 'txt2img' or endpoint == 'img2img':
         if 'width' not in params:
-            params['width'] = 768
+            params['width'] = 512
         if 'height' not in params:
             params['height'] = 768
 
